@@ -1,0 +1,68 @@
+🕒 2025-04-04 18:40:01
+🔹 Memory Before: 14337 MB
+🔹 Memory After:  11431 MB
+✅ Freed:         2906 MB
+--- Top Processes ---
+============================
+
+🕒 2025-04-04 18:41:15
+🔹 Memory Before: 8508 MB
+🔹 Memory After:  8154 MB
+✅ Freed:         354 MB
+--- Top Processes ---
+============================
+
+🕒 2025-04-04 18:59:36
+🔹 Memory Before: 11311 MB
+🔹 Memory After:  10698 MB
+✅ Freed:         612 MB
+--- Top Processes ---
+• CHROME [9757 MB] (PID: 12172)
+• EXPLORER [1211 MB] (PID: 6976)
+• NVIDIA BROADCAST [878 MB] (PID: 13872)
+• DISCORD [813 MB] (PID: 14268)
+• STEAMWEBHELPER [721 MB] (PID: 14668)
+• QTCREATOR [572 MB] (PID: 12028)
+• CLANGD [560 MB] (PID: 11324)
+• MSEDGEWEBVIEW2 [401 MB] (PID: 4160)
+• SKYPE [396 MB] (PID: 7404)
+• NVIDIA OVERLAY [382 MB] (PID: 8124)
+• + 67 other processes, total: 1628 MB
+============================
+
+🕒 2025-04-04 19:01:00
+🔹 Memory Before: 10432 MB
+🔹 Memory After:  9821 MB
+✅ Freed:         611 MB
+--- Top Processes ---
+• CHROME [9567 MB] (PID: 12172)
+• EXPLORER [1244 MB] (PID: 6976)
+• NVIDIA BROADCAST [878 MB] (PID: 13872)
+• DISCORD [818 MB] (PID: 14268)
+• STEAMWEBHELPER [721 MB] (PID: 14668)
+• CLANGD [601 MB] (PID: 11324)
+• QTCREATOR [572 MB] (PID: 12028)
+• MSEDGEWEBVIEW2 [401 MB] (PID: 4160)
+• SKYPE [396 MB] (PID: 7404)
+• NVIDIA OVERLAY [370 MB] (PID: 8124)
+• + 67 other processes, total: 1626 MB
+============================
+
+🕒 2025-04-04 19:39:48
+🔹 Memory Before: 14616 MB
+🔹 Memory After:  13152 MB
+✅ Freed:         1464 MB
+--- Top Processes ---
+• CHROME [10869 MB] (PID: 12172)
+• EXPLORER [1601 MB] (PID: 6976)
+• NVIDIA BROADCAST [878 MB] (PID: 13872)
+• DISCORD [761 MB] (PID: 14268)
+• STEAMWEBHELPER [690 MB] (PID: 14668)
+• CLANGD [601 MB] (PID: 11324)
+• QTCREATOR [567 MB] (PID: 12028)
+• MSEDGEWEBVIEW2 [412 MB] (PID: 4160)
+• SKYPE [399 MB] (PID: 7404)
+• NVIDIA OVERLAY [390 MB] (PID: 8124)
+• + 63 other processes, total: 1537 MB
+============================
+
