@@ -2,8 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QSystemTrayIcon>  // Required for system tray
-#include <QCloseEvent>      // Required for close event
+#include <QSystemTrayIcon>  
+#include <QCloseEvent>     
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -21,19 +21,19 @@ public:
 
 
 protected:
-    void closeEvent(QCloseEvent *event) override;  // ✅ Ensure it's in "protected"
+    void closeEvent(QCloseEvent *event) override;
 
 private:
     Ui::MainWindow *ui;
-    QSystemTrayIcon *trayIcon;  // ✅ Keep tray icon here
+    QSystemTrayIcon *trayIcon; 
 
-    void populateProcessList(); // ✅ Ensure it's in "private"
+    void populateProcessList(); 
     void setAutoStart(bool enable);
 
 private slots:
     void on_CleanVersion_linkActivated(const QString &link);
     void on_cleanButton_clicked();
-    void exitApp();  // ✅ Only one "exitApp()" declaration here
+    void exitApp();  
     void toggleAutoStart(bool checked);
     void toggleThresholdInput(bool checked);
     void validateThresholdInput();
@@ -44,4 +44,4 @@ private slots:
 
 };
 
-#endif // MAINWINDOW_H
+#endif 
