@@ -103,32 +103,32 @@ public:
         std::unordered_map<QString, MemoryInfo> groupedProcesses;
 
         for (const auto& process : memories) {
-            // Нормализация имени процесса: удаление версий, цифр и модификаторов
+           
             QString normalizedName = QString(process.PROCESS_NAME)
-                                         .replace(QRegularExpression("(\\d+|\\.\\S*|\\s+\\*\\d+)$"), "") // Удаляем версии и модификаторы
+                                         .replace(QRegularExpression("(\\d+|\\.\\S*|\\s+\\*\\d+)$"), "")
                                          .trimmed()
                                          .toLower();
 
 
             auto it = groupedProcesses.find(normalizedName);
             if (it != groupedProcesses.end()) {
-                // Суммируем память и обновляем количество экземпляров
+               
                 it->second.RAM_CONSUMPTION += process.RAM_CONSUMPTION;
-                it->second.PROCESS_COUNT++;  // Добавляем счетчик процессов
+                it->second.PROCESS_COUNT++; 
             } else {
                 MemoryInfo newProcess = process;
                 newProcess.PROCESS_COUNT = 1;
-                newProcess.PROCESS_NAME = normalizedName;  // Сохраняем нормализованное имя
+                newProcess.PROCESS_NAME = normalizedName; 
                 groupedProcesses.emplace(normalizedName, newProcess);
             }
         }
 
         std::vector<MemoryInfo> sortedProcesses;
         for (auto& entry : groupedProcesses) {
-            // Восстанавливаем оригинальное имя для отображения
+       
             entry.second.PROCESS_NAME = entry.second.PROCESS_NAME
-                                            .section(".", 0, 0)  // Убираем расширение файла
-                                            .toUpper();          // Первая буква заглавная
+                                            .section(".", 0, 0) 
+                                            .toUpper();         
 
             sortedProcesses.push_back(entry.second);
         }
@@ -275,7 +275,7 @@ public:
 
             if (Process32FirstW(snap, &entry)) {
                 do {
-                    // Извлекаем чистое имя процесса из пути
+                 
                     QString fullName = QString::fromWCharArray(entry.szExeFile);
                     QString processName = QFileInfo(fullName).fileName();
 
